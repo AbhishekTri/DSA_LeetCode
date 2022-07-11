@@ -1,0 +1,14 @@
+ListNode* middleNode(ListNode* head) {
+        if(head==NULL)return NULL;
+        
+        ListNode *a=head;
+        ListNode *b=head;
+        
+        while(b!=NULL && b->next!=NULL){
+            a=a->next;
+            b=b->next->next;
+            
+        }
+        
+        return a;
+    }
